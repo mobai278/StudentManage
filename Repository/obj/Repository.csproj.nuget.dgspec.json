@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Repository\\Repository.csproj": {}
+  },
+  "projects": {
+    "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\86138\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\86138\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\86138\\.nuget\\packages\\",
+        "outputPath": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\86138\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

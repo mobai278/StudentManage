@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "HT2t9cI7e3mLOTsNp+uWem294q3gL0tOH4/NJpnNfk9sqLWngL+xLwiQKfZCVxWg9FGCAs+cV6lSNCGxn/ewJw==",
+  "success": true,
+  "projectFilePath": "D:\\ASP.NET\\毕业项目\\ASP.NET学生管理系统\\新建文件夹\\StudentManage\\Repository\\Repository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\86138\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\dapper.contrib\\2.0.30\\dapper.contrib.2.0.30.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.1\\microsoft.extensions.configuration.abstractions.3.1.1.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.1\\microsoft.extensions.primitives.3.1.1.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\system.data.sqlclient\\4.8.0\\system.data.sqlclient.4.8.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\system.reflection.emit\\4.6.0\\system.reflection.emit.4.6.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\system.reflection.emit.lightweight\\4.6.0\\system.reflection.emit.lightweight.4.6.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,211 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/js/layui-v2.5.5/layui/css/layui.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f2f2f2;
+            color: #666;
+        }
+
+        #LAY_app, body, html {
+            height: 100%;
+        }
+
+        #LAY-user-login, .layadmin-user-display-show {
+            display: block !important;
+        }
+
+        .layadmin-user-login {
+            position: relative;
+            left: 0;
+            top: 0;
+            padding: 110px 0;
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+
+        .layadmin-user-login-main {
+            width: 375px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .layadmin-user-login-header {
+            text-align: center;
+        }
+
+        .layadmin-user-login-box {
+            padding: 20px;
+        }
+
+        .layadmin-user-login-header h2 {
+            margin-bottom: 10px;
+            font-weight: 300;
+            font-size: 30px;
+            color: #000;
+        }
+
+        .layadmin-user-login-header p {
+            font-weight: 300;
+            color: #999;
+        }
+
+        .layadmin-user-login-icon {
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            width: 38px;
+            line-height: 36px;
+            text-align: center;
+            color: #d2d2d2;
+        }
+
+        .layadmin-user-login-body .layui-form-item .layui-input {
+            padding-left: 38px;
+        }
+
+        .layadmin-user-login-body .layui-form-item {
+            position: relative;
+        }
+
+        .layadmin-user-login-footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            line-height: 30px;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            color: rgba(0,0,0,.5);
+        }
+    </style>
+
+</head>
+
+<body layadmin-themealias="default">
+
+    <div class="layadmin-user-login layadmin-user-display-show" id="LAY-user-login">
+
+        <div class="layadmin-user-login-main">
+            <div class="layadmin-user-login-box layadmin-user-login-header">
+                <h2>StudentManage</h2>
+                <p>学生信息管理系统</p>
+            </div>
+            <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
+                <div class="layui-form-item">
+                    <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="LAY-user-login-username"></label>
+                    <input type="text" name="username" id="LAY-user-login-username" lay-verify="required" placeholder="用户名" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <label class="layadmin-user-login-icon layui-icon layui-icon-password" for="LAY-user-login-password"></label>
+                    <input type="password" name="password" id="LAY-user-login-password" lay-verify="required" placeholder="密码" class="layui-input">
+                </div>
+                @*图形验证码*@
+                @*<div class="layui-form-item">
+                        <div class="layui-row">
+                            <div class="layui-col-xs7">
+                                <label class="layadmin-user-login-icon layui-icon layui-icon-vercode" for="LAY-user-login-vercode"></label>
+                                <input type="text" name="vercode" id="LAY-user-login-vercode" lay-verify="required" placeholder="图形验证码" class="layui-input">
+                            </div>
+                            <div class="layui-col-xs5">
+                                <div style="margin-left: 10px;">
+                                    <img src="https://www.oschina.net/action/user/captcha" class="layadmin-user-login-codeimg" id="LAY-user-get-vercode">
+                                </div>
+                            </div>
+                        </div>
+                    </div>*@
+                <div class="layui-form-item" style="margin-bottom: 20px; text-align: center; ">
+                    <input type="radio" name="role" value="0" title="管理员" checked>
+                    <input type="radio" name="role" value="1" title="教师">
+                    <input type="radio" name="role" value="2" title="学生">
+                </div>
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="LAY-user-login-submit">登录</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-trans layadmin-user-login-footer">
+
+             @*<p>&copy; 2020 - StudentManage - By - Wang Teng</p>*@
+            <p>
+                @*<span><a href="https://gitee.com/wt1314/StudentManage" target="_blank">git仓库</a></span>*@
+                @*<span><a href="https://www.cnblogs.com/teng-0802/" target="_blank">个人博客园</a></span>*@
+                @*<span><a href="http://www.layui.com/admin/" target="_blank">前往官网</a></span>*@
+            </p>
+        </div>
+
+    </div>
+
+    <script src="~/js/layui-v2.5.5/layui/layui.js"></script>
+    <script>
+        layui.use(['layer', 'form', 'element'], function () {
+            var $ = layui.$
+                , layer = layui.layer
+                , form = layui.form
+                , element = layui.element;
+
+            form.render();
+            form.on("radio",
+                function (data) {
+                    console.log(data);
+                });
+
+            //提交
+            form.on('submit(LAY-user-login-submit)', function (obj) {
+                $.ajax({
+                    url: "/Home/CheckLogin",
+                    type: 'post',
+                    data: obj.field,
+                    beforeSend: function () {
+                        this.layerIndex = layer.load(0, { shade: [0.5, '#393D49'] });
+                    },
+                    success: function (data) {
+                        if (data.status == 'error') {
+                            layer.msg(data.msg, { icon: 5 });//失败的表情
+                            return;
+                        } else {
+                            layer.msg(data.msg, {
+                                icon: 6,//成功的表情
+                                time: 1 //1秒关闭（如果不配置，默认是3秒）
+                            }, function () {
+                                localStorage.setItem("token", data.token);
+                                location.href = '/Home/Index'; //后台主页
+                            });
+                        }
+                    },
+                    complete: function () {
+                        layer.close(this.layerIndex);
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <style id="LAY_layadmin_theme">
+        .layui-side-menu, .layadmin-pagetabs .layui-tab-title li:after, .layadmin-pagetabs .layui-tab-title li.layui-this:after, .layui-layer-admin .layui-layer-title, .layadmin-side-shrink .layui-side-menu .layui-nav > .layui-nav-item > .layui-nav-child {
+            background-color: #20222A !important;
+        }
+
+        .layui-nav-tree .layui-this, .layui-nav-tree .layui-this > a, .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a {
+            background-color: #009688 !important;
+        }
+
+        .layui-layout-admin .layui-logo {
+            background-color: #20222A !important;
+        }
+    </style><div class="layui-layer-move"></div>
+</body>
+</html>
